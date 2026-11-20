@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import MenuItem from "./components/MenuItem";
 import Footer from "./components/Footer";
+import Descuento from "./components/Descuento";
 
 const menuItem = {
   id: 1,
@@ -22,6 +23,7 @@ const App = () => {
       <Header />
       <Menu>
         <MenuItem menuItem={menuItem} />
+        <Descuento />
       </Menu>
     </main>
     <Footer />
