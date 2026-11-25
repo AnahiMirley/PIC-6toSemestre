@@ -1,3 +1,5 @@
+import styles from "./MenuItem.module.css"
+
 const formatPrice = (price) => {
     new Intl.NumberFormat("es-EC", {
         currency: "USD",
@@ -6,7 +8,7 @@ const formatPrice = (price) => {
 
 const MenuItem = ({menuItem}) => {
     return(
-        <article>
+        <article className={styles.card}>
         <img src={menuItem.iceCream.imagePath} alt="" />
         <h3>{menuItem.iceCream.name}</h3>
         <p>{menuItem.description}</p>
